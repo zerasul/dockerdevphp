@@ -1,0 +1,11 @@
+services:
+  php:
+    image: dockerdevphp:latest
+    build:
+     dockerfile: ./Dockerfile
+    volumes:
+      - $PWD/scripts:/var/www/html
+    ports:
+      - 80:80
+      - 443:443
+
